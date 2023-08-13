@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: push
+  profiles:
+    active:
+      - local # ???? ???? ????
+    include:
+      - db
+    group:
+      local: "db-local"
+  jackson:
+    property-naming-strategy: SNAKE_CASE
+
+server:
+  shutdown: graceful

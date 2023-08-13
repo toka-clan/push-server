@@ -1,0 +1,30 @@
+### 알림등록(daily)
+POST http://localhost:8080/api/v1/push/alarm/register
+Content-Type: application/json
+
+{
+  "device_id": "12345",
+  "push_token": "token",
+  "service_type": "MEDIATE",
+  "repeat_type": "DAILY",
+  "start_date": "20230808",
+  "end_date": "20230810",
+  "daily_repeat_period": "2",
+  "daily_start_time":"153000",
+  "weekly_repeat_periods": []
+}
+
+### 알림등록(weekly)
+POST http://localhost:8080/api/v1/push/alarm/register
+Content-Type: application/json
+
+{
+  "device_id": "12345",
+  "push_token": "token",
+  "service_type": "MEDIATE",
+  "repeat_type": "WEEKLY",
+  "start_date": "20230808",
+  "end_date": "20230810",
+  "daily_start_time":"153000",
+  "weekly_repeat_periods": ["1", "2"]
+}
