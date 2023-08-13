@@ -26,7 +26,7 @@
 
 ### 배포
 - aws 배포 or nas활용
-- 기도메인주소 활용
+- [x] toka.kr 도메인 구매
 - db 
   - mysql 
 
