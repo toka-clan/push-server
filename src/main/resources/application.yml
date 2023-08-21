@@ -1,9 +1,10 @@
+
 spring:
   application:
     name: push
   profiles:
     active:
-      - local # ???? ???? ????
+      - local
     include:
       - db
     group:
@@ -13,3 +14,7 @@ spring:
 
 server:
   shutdown: graceful
+  port: 12290
+
+springdoc:
+  packages-to-scan: kr.toka.push.web

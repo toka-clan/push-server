@@ -13,8 +13,7 @@ class FcmConfig {
 
     @Bean
     fun firebaseMessaging(): FirebaseMessaging {
-        // todo: 해당앱으로부터 json파일 넣기
-        val resource = ClassPathResource("firebase/helloworld-f4ac6-firebase-adminsdk-d953o-5e629d4445.json")
+        val resource = ClassPathResource("firebase/toka-7f683-firebase-adminsdk-zbj59-5ae1edc4f7.json")
         val refreshToken = resource.inputStream
         val options = FirebaseOptions.builder()
             .setCredentials(GoogleCredentials.fromStream(refreshToken))
